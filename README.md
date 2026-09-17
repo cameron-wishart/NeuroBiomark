@@ -37,5 +37,6 @@ Every 'dataset' folder will be missing 'image_kayes.xlsx' as it contains sensiti
 -   Result: The model did not get better, looking at the graphs of the training and validation losses changes through epochs, it seems that the model suffers from overfitting as well as unstable learning issues.
 - [ ] Plot Confidence level of prediction in function of ECAS/ALSFRS-R value.
 - [ ] Add Train & Val losses over epochs graphs for training to pinpoint problems with the models more accurately.
-- [ ] Change config.py paths from absolute to relative
+- [x] Change config.py paths from absolute to relative
+- [x] Correct normalisation leakage issue in 2 class and 3 class sections (removed Global _DATASET_MEAN, _DATASET_STD to prevent leakage and recompute each fold)
   
